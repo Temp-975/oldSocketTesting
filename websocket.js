@@ -38,8 +38,8 @@
                    // Send data back
                    connected.writeable.write(value).then(
                      () => console.log("Sending data succeeded"),
-                     e => console.error("Failed to send: ", e);
-                   });
+                     e => console.error("Failed to send: ", e)
+                   );
                    // Continue to wait for data
                    waitForData ();
                  }
@@ -65,7 +65,7 @@
        () => {
          console.log("TCP server socket created sucessfully");
        },
-       e =>console.error("TCP server socket creation failed due to error: ", e);
+       e =>console.error("TCP server socket creation failed due to error: ", e)
      );
 
      // Handle TCP server closed, either as a result of the webapp
@@ -74,10 +74,9 @@
        () => {
           console.log("TCP server socket has been cleanly closed");
        },
-       e => console.error("TCP server socket closed due to error: ", e);
+       e => console.error("TCP server socket closed due to error: ", e)
      );
 
    },
-   e => console.error("TCP Server Socket on local port 6789 was denied
-                      due to error: ", e);
+   e => console.error("TCP Server Socket on local port 6789 was denied due to error: ", e)
  );

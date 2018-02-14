@@ -3,8 +3,6 @@
       // The server will listen on port 6789 and respond back with whatever
       // has been sent to the server.
       //
-      function startSocket() {
-
       console.log("hello");
        //  Request permission to listen on port 6789
        navigator.tcpServerPermission.requestPermission({"localPort":6789}).then(
@@ -83,4 +81,3 @@
          e => console.error("TCP Server Socket on local port 6789 was denied
                             due to error: ", e);
        );
-             }

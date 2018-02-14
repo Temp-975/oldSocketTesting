@@ -3,7 +3,7 @@
       // The server will listen on port 6789 and respond back with whatever
       // has been sent to the server.
       //
-
+      console.log("hello");
        //  Request permission to listen on port 6789
        navigator.tcpServerPermission.requestPermission({"localPort":6789}).then(
          () => {

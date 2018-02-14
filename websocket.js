@@ -38,7 +38,7 @@
                          // Send data back
                          connected.writeable.write(value).then(
                            () => console.log("Sending data succeeded"),
-                           e => console.error("Failed to send: ", e);
+                           e => console.error("Failed to send: ", e));
                          });
                          // Continue to wait for data
                          waitForData ();
@@ -78,6 +78,5 @@
            );
 
          },
-         e => console.error("TCP Server Socket on local port 6789 was denied
-                            due to error: ", e);
+         e => console.error("TCP Server Socket on local port 6789 was denied due to error: ", e);
        );
